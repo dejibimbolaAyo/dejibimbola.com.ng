@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import Image from "next/image";
 
 interface Props {
 
@@ -10,7 +11,7 @@ export default function Footer({ }: Props): ReactElement {
 			<div className="container flex-col justify-center w-11/12">
 				<div className="sm:flex">
 					<div className="relative hidden -ml-64 opacity-10 sm:h-auto sm:w-full sm:block">
-						<img className="" src="./assets/dejibimbola_lg.png" alt="" />
+						<Image className="" src="/assets/dejibimbola_lg.png" alt="" width={1020} height={221} layout="responsive" />
 					</div>
 					<div className="p-4 sm:w-2/4">
 						<div className="flex justify-around text-white">
