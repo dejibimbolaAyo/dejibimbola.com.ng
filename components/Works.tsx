@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from "next/image";
 import React, { ReactElement } from 'react'
 
 interface Props {
@@ -16,7 +17,7 @@ export default function Works({ }: Props): ReactElement {
 				<div className="flex overflow-x-scroll sm:justify-center md:overflow-hidden">
 					<div className="flex-col flex-shrink-0 m-4 transition duration-500 ease-in-out shadow-lg hover:shadow-xl">
 						<div>
-							<img src="./assets/nexstar.png" alt="" className="w-56 h-auto" />
+							<Image src="/assets/nexstar.png" alt="Nexstar AI" className="w-56 h-auto" width={224} height={224} />
 						</div>
 						<div className="relative p-4 text-white bg-gray-800 border-t-2 border-yellow-600">
 							<h3 className="font-sans text-sm font-bold">Nexstar AI</h3>
@@ -25,7 +26,7 @@ export default function Works({ }: Props): ReactElement {
 					</div>
 					<div className="flex-col flex-shrink-0 m-4 transition duration-500 ease-in-out shadow-lg hover:shadow-xl">
 						<div>
-							<img src="./assets/jamii_web_mobile.png" alt="" className="w-56 h-auto" />
+							<Image src="/assets/jamii_web_mobile.png" alt="" className="w-56 h-auto" width={224} height={224} />
 						</div>
 						<div className="relative p-4 text-white bg-gray-800 border-t-2 border-yellow-600">
 							<h3 className="font-sans text-sm font-bold">Jamii Mobile</h3>
@@ -34,7 +35,7 @@ export default function Works({ }: Props): ReactElement {
 					</div>
 					<div className="flex-col flex-shrink-0 m-4 transition duration-500 ease-in-out shadow-lg hover:shadow-xl">
 						<div>
-							<img src="./assets/search_service.png" alt="" className="w-56 h-auto" />
+							<Image src="/assets/search_service.png" alt="" className="w-56 h-auto" width={224} height={224} />
 						</div>
 						<div className="relative p-4 text-white bg-gray-800 border-t-2 border-yellow-600">
 							<h3 className="font-sans text-sm font-bold">Search server</h3>
@@ -43,7 +44,7 @@ export default function Works({ }: Props): ReactElement {
 					</div>
 					<div className="flex-col flex-shrink-0 m-4 transition duration-500 ease-in-out shadow-lg hover:shadow-xl">
 						<div>
-							<img src="./assets/ussd.png" alt="" className="w-56 h-auto" />
+							<Image src="/assets/ussd.png" alt="" className="w-56 h-auto" width={224} height={224} />
 						</div>
 						<div className="relative p-4 text-white bg-gray-800 border-t-2 border-yellow-600">
 							<h3 className="font-sans text-sm font-bold">Retails USSD</h3>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import React, { ReactElement } from 'react'
 
 interface Props {
@@ -12,22 +13,22 @@ export default function FunWorks({ }: Props): ReactElement {
 			<div className="flex pt-8 pb-12 overflow-x-scroll sm:justify-center md:overflow-hidden">
 				<div className="flex-col flex-shrink-0 m-4 transition duration-300 ease-in-out shadow-lg hover:shadow-xl">
 					<div>
-						<img src="./assets/1.png" alt="" className="w-56 h-auto" />
+						<Image src="/assets/1.png" alt="" className="w-56 h-auto" width={224} height={224} />
 					</div>
 				</div>
 				<div className="flex-col flex-shrink-0 m-4 transition duration-300 ease-in-out shadow-lg hover:shadow-xl">
 					<div>
-						<img src="./assets/2.png" alt="" className="w-56 h-auto" />
+						<Image src="/assets/2.png" alt="" className="w-56 h-auto" width={224} height={224} />
 					</div>
 				</div>
 				<div className="flex-col flex-shrink-0 m-4 transition duration-300 ease-in-out shadow-lg hover:shadow-xl">
 					<div>
-						<img src="./assets/3.png" alt="" className="w-56 h-auto" />
+						<Image src="/assets/3.png" alt="" className="w-56 h-auto" width={224} height={224} />
 					</div>
 				</div>
 				<div className="flex-col flex-shrink-0 m-4 transition duration-300 ease-in-out shadow-lg hover:shadow-xl">
 					<div>
-						<img src="./assets/4.png" alt="" className="w-56 h-auto" />
+						<Image src="/assets/4.png" alt="" className="w-56 h-auto" width={224} height={224} />
 					</div>
 				</div>
 			</div>
