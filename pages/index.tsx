@@ -1,15 +1,27 @@
-import Link from 'next/link'
+import React, { ReactElement } from 'react'
+import Employment from '../components/Employment'
+import FunWorks from '../components/FunWorks'
+import Hero from '../components/Hero'
 import Layout from '../components/Layout'
+import Recommendation from '../components/Recommendation'
+import Resume from '../components/Resume'
+import Skills from '../components/Skills'
+import Works from '../components/Works'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+interface Props {
 
-export default IndexPage
+}
+
+export default function IndexPage({ }: Props): ReactElement {
+	return (
+		<Layout title="Home">
+			<Hero></Hero>
+			<Skills></Skills>
+			<Works></Works>
+			<FunWorks></FunWorks>
+			<Employment></Employment>
+			<Recommendation></Recommendation>
+			<Resume></Resume>
+		</Layout>
+	)
+}
