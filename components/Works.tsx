@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { ReactElement, useState } from 'react'
+import React, { ReactElement } from 'react'
 
 interface Props {
 
@@ -52,7 +52,7 @@ export default function Works({ }: Props): ReactElement {
 					</div>
 				</div>
 				<div className="p-16 text-sm font-bold text-right text-white">
-					<Link href="portfolio">
+					<Link href="portfolio`">
 						<div className="inline-flex">
 							<span>See more</span>
 							<svg xmlns="http://www.w3.org/2000/svg" className="self-center w-8 h-4" fill="none" viewBox="0 0 24 24">
