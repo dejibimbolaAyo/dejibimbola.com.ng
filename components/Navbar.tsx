@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function Navbar({ }: Props): ReactElement {
-	const [navBarCollapse, setNavBarCollapse] = useState(true);
+	const [navBarCollapse, setNavBarCollapse] = useState(false);
 	const variants = {
 		open: { opacity: 1, x: "200%" },
 		closed: { opacity: 0, x: "-10%" },
