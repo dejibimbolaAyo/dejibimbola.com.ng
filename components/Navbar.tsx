@@ -1,11 +1,18 @@
 import Link from 'next/link'
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useState } from 'react'
+import { motion } from "framer-motion"
+
 
 interface Props {
 
 }
 
 export default function Navbar({ }: Props): ReactElement {
+	const [navBarCollapse, setNavBarCollapse] = useState(true);
+	const variants = {
+		open: { opacity: 1, x: "200%" },
+		closed: { opacity: 0, x: "-10%" },
+	  }
 	return (
 		<header
 			className="fixed z-10 flex items-center w-full h-16 pt-4 mb-4 bg-white border-b border-gray-200 shadow-xs header">
@@ -31,7 +38,7 @@ export default function Navbar({ }: Props): ReactElement {
 						</ul>
 					</div>
 				</nav>
-				<div className="self-center justify-self-end nav__collapse md:hidden">
+				<div className="self-center justify-self-end nav__collapse md:hidden" onClick={() => setNavBarCollapse(!navBarCollapse)}>
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M12 8C10.8954 8 10 7.10457 10 6C10 4.89543 10.8954 4 12 4C13.1046 4 14 4.89543 14 6C14 7.10457 13.1046 8 12 8Z"
@@ -46,6 +53,21 @@ export default function Navbar({ }: Props): ReactElement {
 				</div>
 
 			</div>
+			<motion.nav animate={navBarCollapse? "open" : "closed"} variants={variants} className="absolute w-4/12 px-10 py-8 mt-56 bg-white shadow nav md:hidden">
+				<div className="text-right">
+					<ul className="nav__links">
+						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
+							<a target="_blank" href="https://blog.dejibimbola.com.ng">Blog</a>
+						</li>
+						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
+							<Link href="/portfolio">Portfolio</Link>
+						</li>
+						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
+							<Link href="/contact">Contact</Link>
+						</li>
+					</ul>
+				</div>
+			</motion.nav>
 		</header>
 	)
 }
