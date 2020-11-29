@@ -12,6 +12,18 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 	<div>
 		<Head>
 			<title>{title}</title>
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@dejibimbola" />
+			<meta name="twitter:creator" content="@dejibimbola" />
+			<meta name="twitter:title" content="Dejibimbola" />
+			<meta name="twitter:description" content="Dejibimbola's works as a Software Engineer" />
+			<meta name="twitter:image" content={`https://www.dejibimbola.com.ng/assets/dejibimbola-mark.png`} />
+			<meta property="og:url" content="https://www.dejibimbola.com.ng" />
+			<meta property="og:type" content="article" />
+			<meta property="og:title" content="Dejibimbola" />
+			<meta property="og:description" content="Deibimbola's works" />
+			<meta property="og:image" content={`https://www.dejibimbola.com.ng/assets/dejibimbola-mark.png`} />
+			<meta name="description" content="Dejibimbola's works as a Software Engineer" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 			<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
 			<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -21,7 +33,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		</Head>
-		<body className="box-border m-0 antialiased min-h-screen">
+		<body className="box-border min-h-screen m-0 antialiased">
 			<Navbar></Navbar>
 			{children}
 			<Footer></Footer>
