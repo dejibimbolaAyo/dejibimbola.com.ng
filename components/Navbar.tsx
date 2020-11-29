@@ -12,7 +12,7 @@ export default function Navbar({ }: Props): ReactElement {
 	const variants = {
 		open: { opacity: 1, x: "200%" },
 		closed: { opacity: 0, x: "-10%" },
-	  }
+	}
 	return (
 		<header
 			className="fixed z-10 flex items-center w-full h-16 pt-4 mb-4 bg-white border-b border-gray-200 shadow-xs header">
@@ -53,7 +53,7 @@ export default function Navbar({ }: Props): ReactElement {
 				</div>
 
 			</div>
-			<motion.nav animate={navBarCollapse? "open" : "closed"} variants={variants} className="absolute w-4/12 px-10 py-8 mt-56 bg-white shadow nav md:hidden">
+			{navBarCollapse && <motion.nav animate={navBarCollapse ? "open" : "closed"} variants={variants} className="absolute w-4/12 px-10 py-8 mt-56 bg-white shadow nav md:hidden">
 				<div className="text-right">
 					<ul className="nav__links">
 						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
@@ -67,7 +67,7 @@ export default function Navbar({ }: Props): ReactElement {
 						</li>
 					</ul>
 				</div>
-			</motion.nav>
+			</motion.nav>}
 		</header>
 	)
 }
