@@ -71,6 +71,9 @@ export default function Navbar({ }: Props): ReactElement {
 				<div className="text-right">
 					<ul className="nav__links">
 						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
+							<Link href="/">Home</Link>
+						</li>
+						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
 							<a target="_blank" href="https://blog.dejibimbola.com.ng">Blog</a>
 						</li>
 						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">

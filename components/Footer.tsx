@@ -18,6 +18,9 @@ export default function Footer({ }: Props): ReactElement {
 								<h2 className="mb-2 text-2xl">Navigation</h2>
 								<ul>
 									<li className="py-1 text-xs transition duration-300 ease-in-out hover:text-yellow-600">
+										<Link href="/">Home</Link>
+									</li>
+									<li className="py-1 text-xs transition duration-300 ease-in-out hover:text-yellow-600">
 										<a target="_blank" href="https://blog.dejibimbola.com.ng">Blog</a>
 									</li>
 									<li className="py-1 text-xs transition duration-300 ease-in-out hover:text-yellow-600">
@@ -26,7 +29,6 @@ export default function Footer({ }: Props): ReactElement {
 									</li>
 									<li className="py-1 text-xs transition duration-300 ease-in-out hover:text-yellow-600">
 										<Link href="/contact">Contact</Link>
-
 									</li>
 								</ul>
 							</div>
