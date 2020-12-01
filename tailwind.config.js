@@ -17,6 +17,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'accent-1': '#333',
+				'yellow-600': '#d69e2e'
 			},
 			fontFamily: {
 				'sans': ['Manrope'],

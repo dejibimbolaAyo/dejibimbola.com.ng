@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import ProgressiveImage from "../components/elements/ProgressiveImage";
 
 interface Props {
 
@@ -21,7 +22,8 @@ export default function Hero({ }: Props): ReactElement {
 			</div>
 			<div className="flex-col items-center justify-center max-w-6xl mx-auto phone--container">
 				<div className="phone">
-					<img src="assets/phoneMockup@1.5x.png" className="w-64 h-auto mx-auto" alt="" />
+					{/* <img src="assets/phoneMockup@1.5x.png" className="w-64 h-auto mx-auto" alt="" /> */}
+					<ProgressiveImage tinyImageSrc="assets/tiny_phoneMockup@1.5x.png" originalImageSrc="assets/phoneMockup@1.5x.png" className="w-64 h-auto mx-auto"/>
 				</div>
 				<div className="w-full phone__bg">
 					<svg viewBox="0 0 768 108" fill="none" xmlns="http://www.w3.org/2000/svg">
