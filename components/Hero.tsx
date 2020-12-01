@@ -7,7 +7,7 @@ interface Props {
 
 export default function Hero({ }: Props): ReactElement {
 	return (
-		<div className="flex-col pt-56">
+		<div className="flex-col pt-56 pb-24">
 			<div className="container w-10/12 pt-4 pb-4 mx-auto sm:pt-16">
 				<div className="flex-col items-center w-full text-center">
 					<h5 className="font-serif text-base font-semibold leading-3 tracking-widest uppercase">Software Engineer
@@ -22,10 +22,8 @@ export default function Hero({ }: Props): ReactElement {
 			</div>
 			<div className="flex-col items-center justify-center max-w-6xl mx-auto phone--container">
 				<div className="phone">
-					{/* <img src="assets/phoneMockup@1.5x.png" className="w-64 h-auto mx-auto" alt="" /> */}
 					<ProgressiveImage tinyImageSrc="assets/tiny_phoneMockup@1.5x.png" originalImageSrc="assets/phoneMockup@1.5x.png" className="w-64 h-auto mx-auto"/>
 				</div>
-				<div className="w-full phone__bg"></div>
 			</div>
 		</div>
 	)
