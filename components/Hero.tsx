@@ -25,17 +25,7 @@ export default function Hero({ }: Props): ReactElement {
 					{/* <img src="assets/phoneMockup@1.5x.png" className="w-64 h-auto mx-auto" alt="" /> */}
 					<ProgressiveImage tinyImageSrc="assets/tiny_phoneMockup@1.5x.png" originalImageSrc="assets/phoneMockup@1.5x.png" className="w-64 h-auto mx-auto"/>
 				</div>
-				<div className="w-full phone__bg">
-					<svg viewBox="0 0 768 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<defs />
-						<mask id="a" width="1440" height="171" x="0" y="0" maskUnits="userSpaceOnUse">
-							<path fill="#fff" d="M0 0h1440v171H0z" />
-						</mask>
-						<g mask="url(#a)">
-							<ellipse cx="387" cy="600" fill="#fff" rx="501" ry="563" />
-						</g>
-					</svg>
-				</div>
+				<div className="w-full phone__bg"></div>
 			</div>
 		</div>
 	)
