@@ -32,7 +32,7 @@ export default function Hero({ }: Props): ReactElement {
 							<path fill="#fff" d="M0 0h1440v171H0z" />
 						</mask>
 						<g mask="url(#a)">
-							<ellipse cx="387" cy="600" fill="#d69e2e" rx="501" ry="563" />
+							<ellipse cx="387" cy="600" fill="#fff" rx="501" ry="563" />
 						</g>
 					</svg>
 				</div>
