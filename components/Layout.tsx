@@ -25,7 +25,7 @@ export default function Layout({ children, title = 'This is the default title' }
 				<meta property="og:title" content="Dejibimbola" />
 				<meta property="og:description" content="Deibimbola's works" />
 				<meta property="og:image" content={`https://www.dejibimbola.com.ng/assets/dejibimbola-mark.png`} />
-				<meta name="description" content="Dejibimbola's works as a Software Engineer" />
+				<meta name="description" content="Abimbola Ayodeji's work" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 				<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
