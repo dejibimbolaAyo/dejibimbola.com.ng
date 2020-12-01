@@ -85,16 +85,16 @@ export default function Contact({ }: Props): ReactElement {
 			</div>
 			<div className="relative w-full overflow-x-hidden lg:w-1/2">
 				<div className="bg-yellow-600 rounded-md lg:mx-20 yellow-card"></div>
-				<div className="p-2 bg-white border-2 border-black rounded-lg shadow-md contact-form">
+				<div className="p-2 bg-white border border-black rounded-lg shadow-md contact-form">
 					<div className="my-2">
 						<h1 className="font-sans text-sm font-extrabold leading-8 text-center uppercase">Send me a message</h1>
 						<p className="text-xs font-bold text-center">I will respond in less than 24 hours</p>
 					</div>
 					<div className="flex-col my-4">
-						<input className="w-full p-1 my-3 text-sm placeholder-gray-400 border-2 border-yellow-600 border-solid rounded-sm" type="email" placeholder="Email" id="" />
-						<input className="w-full p-1 my-3 text-sm placeholder-gray-400 border-2 border-yellow-600 border-solid rounded-sm" type="text" placeholder="Name" id="" />
+						<input className="w-full p-1 my-3 text-sm placeholder-gray-400 border border-yellow-600 border-solid rounded-sm" type="email" placeholder="Email" id="" />
+						<input className="w-full p-1 my-3 text-sm placeholder-gray-400 border border-yellow-600 border-solid rounded-sm" type="text" placeholder="Name" id="" />
 						<div className="h-32 pb-4 mb-6 overflow-hidden max-h-32" >
-							<textarea className="w-full h-full max-h-full p-1 my-3 text-sm placeholder-gray-400 border-2 border-yellow-600 border-solid rounded-sm" placeholder="Enter a message" name="" id="message-input" rows={5} />
+							<textarea className="w-full h-full max-h-full p-1 my-3 text-sm placeholder-gray-400 border border-yellow-600 border-solid rounded-sm" placeholder="Enter a message" name="" id="message-input" rows={5} />
 						</div>
 						<button className="w-full h-10 font-sans font-bold text-center text-white bg-yellow-600 rounded-sm hover:bg-yellow-600 focus:bg-yellow-700" type="submit">Send Message</button>
 					</div>
