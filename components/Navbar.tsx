@@ -38,6 +38,9 @@ export default function Navbar({ }: Props): ReactElement {
 					<div className="text-right">
 						<ul className="flex nav__links">
 							<li className="mx-4 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
+								<Link href="/">Home</Link>
+							</li>
+							<li className="mx-4 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
 								<a target="_blank" href="https://blog.dejibimbola.com.ng">Blog</a>
 							</li>
 							<li className="mx-4 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
@@ -67,6 +70,9 @@ export default function Navbar({ }: Props): ReactElement {
 			{navBarCollapse && <motion.nav animate={navBarCollapse ? "open" : "closed"} variants={variants} ref={ref} className="absolute z-0 w-4/12 px-10 py-8 mt-56 bg-white shadow nav md:hidden">
 				<div className="text-right">
 					<ul className="nav__links">
+						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
+							<Link href="/">Home</Link>
+						</li>
 						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
 							<a target="_blank" href="https://blog.dejibimbola.com.ng">Blog</a>
 						</li>
