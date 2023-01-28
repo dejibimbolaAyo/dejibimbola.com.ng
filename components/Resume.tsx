@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import Link from 'next/link'
 
 interface Props {
 
@@ -12,7 +13,7 @@ export default function Resume({ }: Props): ReactElement {
 					<p className="">I am a Full-Stack Developer with 4+ years of experience building and maintaining products
 					across E-commerce, Health Insurance, and FinTech.</p>
 					<div className="flex items-baseline justify-center sm:justify-start">
-						<a href="/contact" className="inline-block px-4 py-2 mt-4 mr-4 text-sm font-bold bg-white rounded-md flex-shrink-1">Contact</a>
+						<Link href="/contact" className="inline-block px-4 py-2 mt-4 mr-4 text-sm font-bold bg-white rounded-md flex-shrink-1">Contact</Link>
 						{/* TODO: Link to an s3 bucket */}
 					</div>
 				</div>

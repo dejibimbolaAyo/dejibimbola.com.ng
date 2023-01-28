@@ -1,6 +1,7 @@
-import Link from 'next/link'
-import useOnclickOutside from "react-cool-onclickoutside";
 import React, { ReactElement, useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image';
+import useOnclickOutside from "react-cool-onclickoutside";
 import { motion } from "framer-motion"
 
 
@@ -30,7 +31,7 @@ export default function Navbar({ }: Props): ReactElement {
 			<div className="flex justify-between w-10/12 mx-auto">
 				<Link href="/">
 					<div className="w-3/4">
-						<img src="https://blog.dejibimbola.com.ng/_next/static/media/dejibimbola-logo.715f7623c319e03076cefdd56b5785e6.png"
+						<Image src="https://blog.dejibimbola.com.ng/_next/static/media/dejibimbola-logo.715f7623c319e03076cefdd56b5785e6.png"
 							className="w-40 h-auto" alt="" />
 					</div>
 				</Link>
@@ -41,7 +42,7 @@ export default function Navbar({ }: Props): ReactElement {
 								<Link href="/">Home</Link>
 							</li>
 							<li className="mx-4 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
-								<a target="_blank" href="https://blog.dejibimbola.com.ng">Blog</a>
+								<Link target="_blank" href="https://blog.dejibimbola.com.ng">Blog</Link>
 							</li>
 							<li className="mx-4 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
 								<Link href="/portfolio">Portfolio</Link>
@@ -74,7 +75,7 @@ export default function Navbar({ }: Props): ReactElement {
 							<Link href="/">Home</Link>
 						</li>
 						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
-							<a target="_blank" href="https://blog.dejibimbola.com.ng">Blog</a>
+							<Link target="_blank" href="https://blog.dejibimbola.com.ng">Blog</Link>
 						</li>
 						<li className="mx-4 mb-5 font-sans text-sm font-bold transition duration-300 ease-in-out hover:text-yellow-600">
 							<Link href="/portfolio">Portfolio</Link>

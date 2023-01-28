@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 import useProgressiveImg from "../../hooks/useProgressiveImage";
 
 const ProgressiveImage = ({tinyImageSrc, originalImageSrc, className}: any) => {
@@ -9,7 +11,7 @@ const ProgressiveImage = ({tinyImageSrc, originalImageSrc, className}: any) => {
 	);
 
 	return (
-		<img src={src} style={{ filter: blur ? "blur(20px)" : "none", transition: blur ? "none" : "filter 0.3s ease-out"  }} className={className} />
+		<Image src={src} style={{ filter: blur ? "blur(20px)" : "none", transition: blur ? "none" : "filter 0.3s ease-out"  }} alt="progressive-blur" className={className} />
 	)
 }
 

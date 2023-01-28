@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-
+import Image from 'next/image'
 interface Props {
 
 }
@@ -19,21 +19,21 @@ export default function Employment({ }: Props): ReactElement {
 							<div className="flex justify-center xs:m-1">
 								<div
 									className="flex items-center flex-grow-0 flex-shrink-0 w-auto h-16 p-2 m-2 bg-gray-100 rounded-md ">
-									<img src="./assets/sci.png" alt="" className="h-12 mx-auto" />
+									<Image src="./assets/sci.png" alt="" className="h-12 mx-auto" />
 								</div>
 								<div
 									className="flex items-center flex-grow-0 flex-shrink-0 h-16 p-2 m-2 bg-gray-100 rounded-md">
-									<img src="./assets/robosys.png" alt="" className="h-12" />
+									<Image src="./assets/robosys.png" alt="" className="h-12" />
 								</div>
 							</div>
 							<div className="flex justify-center xs:m-1">
 								<div
 									className="flex items-center flex-grow-0 flex-shrink-0 w-auto h-16 px-4 py-2 m-2 bg-gray-100 rounded-md">
-									<img src="./assets/parallelscore.png" alt="" className="h-12" />
+									<Image src="./assets/parallelscore.png" alt="" className="h-12" />
 								</div>
 								<div
 									className="flex items-center flex-grow-0 flex-shrink-0 h-16 px-4 py-2 m-2 bg-gray-100 rounded-md">
-									<img src="./assets/tradedepot.png" alt="" className="h-12" />
+									<Image src="./assets/tradedepot.png" alt="" className="h-12" />
 								</div>
 							</div>
 						</div>

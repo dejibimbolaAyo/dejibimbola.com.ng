@@ -1,4 +1,5 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement } from 'react';
+import Image from 'next/image';
 
 interface Props {
 
@@ -20,7 +21,7 @@ export default function Recommendation({ }: Props): ReactElement {
 						</div>
 						<div className="flex justify-center m-4">
 							<div className="w-12 h-12 mr-4 overflow-hidden rounded-full">
-								<img src="./assets/toluwalope_yussuff.jpg" alt="" className="object-cover w-16 h-auto" />
+								<Image src="./assets/toluwalope_yussuff.jpg" alt="" className="object-cover w-16 h-auto" />
 							</div>
 							<div className="text-white">
 								<h4 className="font-bold">Toluwalope Yussuff</h4>
@@ -40,7 +41,7 @@ export default function Recommendation({ }: Props): ReactElement {
 						</div>
 						<div className="flex justify-center m-4">
 							<div className="w-12 h-12 mr-4 overflow-hidden rounded-full">
-								<img src="./assets/shalom_zebhor.jpg" alt="" className="object-cover w-16 h-auto" />
+								<Image src="./assets/shalom_zebhor.jpg" alt="" className="object-cover w-16 h-auto" />
 							</div>
 							<div className="text-white">
 								<h4 className="font-bold">Shalom Izebhor</h4>
@@ -61,7 +62,7 @@ export default function Recommendation({ }: Props): ReactElement {
 						</div>
 						<div className="flex justify-center m-4">
 							<div className="w-12 h-12 mr-4 overflow-hidden rounded-full">
-								<img src="./assets/moses_igbuku.jpg" alt="" className="object-cover w-16 h-auto" />
+								<Image src="./assets/moses_igbuku.jpg" alt="" className="object-cover w-16 h-auto" />
 							</div>
 							<div className="text-white">
 								<h4 className="font-bold">Moses Igbuku</h4>

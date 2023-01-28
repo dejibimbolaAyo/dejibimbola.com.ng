@@ -1,4 +1,5 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement } from 'react';
+import Image from 'next/image';
 
 interface Props {
 
@@ -15,51 +16,51 @@ export default function Skills({ }: Props): ReactElement {
 					<div className="flex justify-center">
 						<div className="flex-col items-center justify-center m-8 skill__badge">
 							<div className="w-16 mx-auto">
-								<img src="./assets/node.png" alt="" />
+								<Image src="./assets/node.png" alt="" />
 							</div>
 						</div>
 						<div className="flex-col items-center justify-center m-8 skill__badge">
 							<div className="w-16 mx-auto">
-								<img src="./assets/aws_lambda.png" alt="" />
+								<Image src="./assets/aws_lambda.png" alt="" />
 							</div>
 						</div>
 						<div className="flex-col items-center justify-center m-8 skill__badge">
 							<div className="w-16 mx-auto">
-								<img src="./assets/firestore.png" alt="" />
-							</div>
-						</div>
-					</div>
-					<div className="flex justify-center">
-						<div className="flex-col items-center justify-center m-8 skill__badge">
-							<div className="w-16 mx-auto">
-								<img src="./assets/html.png" alt="" />
-							</div>
-						</div>
-						<div className="flex-col items-center justify-center m-8 skill__badge">
-							<div className="w-16 mx-auto">
-								<img src="./assets/javascript.png" alt="" />
-							</div>
-						</div>
-						<div className="flex-col items-center justify-center m-8 skill__badge">
-							<div className="w-16 mx-auto">
-								<img src="./assets/typescript.png" alt="" />
+								<Image src="./assets/firestore.png" alt="" />
 							</div>
 						</div>
 					</div>
 					<div className="flex justify-center">
 						<div className="flex-col items-center justify-center m-8 skill__badge">
 							<div className="w-16 mx-auto">
-								<img src="./assets/react.svg" alt="" />
+								<Image src="./assets/html.png" alt="" />
 							</div>
 						</div>
 						<div className="flex-col items-center justify-center m-8 skill__badge">
 							<div className="w-16 mx-auto">
-								<img src="./assets/mongodb-logo.png" alt="" />
+								<Image src="./assets/javascript.png" alt="" />
 							</div>
 						</div>
 						<div className="flex-col items-center justify-center m-8 skill__badge">
 							<div className="w-16 mx-auto">
-								<img src="./assets/digital_ocean.png" alt="" />
+								<Image src="./assets/typescript.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div className="flex justify-center">
+						<div className="flex-col items-center justify-center m-8 skill__badge">
+							<div className="w-16 mx-auto">
+								<Image src="./assets/react.svg" alt="" />
+							</div>
+						</div>
+						<div className="flex-col items-center justify-center m-8 skill__badge">
+							<div className="w-16 mx-auto">
+								<Image src="./assets/mongodb-logo.png" alt="" />
+							</div>
+						</div>
+						<div className="flex-col items-center justify-center m-8 skill__badge">
+							<div className="w-16 mx-auto">
+								<Image src="./assets/digital_ocean.png" alt="" />
 							</div>
 						</div>
 					</div>
