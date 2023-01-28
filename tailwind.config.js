@@ -1,10 +1,10 @@
 module.exports = {
-	future: {
-		removeDeprecatedGapUtilities: true,
-		purgeLayersByDefault: true,
-	},
-	purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
-	theme: {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
 		opacity: {
 			'0': '0',
 			'10': '0.1',
@@ -26,6 +26,5 @@ module.exports = {
 		},
 	},
 	variants: {},
-	plugins: [],
+  plugins: [],
 }
-
