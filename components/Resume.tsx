@@ -5,10 +5,10 @@ interface Props {}
 
 export default function Resume({}: Props): ReactElement {
   return (
-    <div className="flex justify-center py-12 bg-yellow-200">
+    <div className="flex justify-center py-12 bg-yellow-100">
       <div className="container flex justify-center w-12/12">
         <div className="flex-col w-11/12 p-8 bg-yellow-600 rounded-md">
-          <p className="">
+          <p className="text-white text-xl">
             I am a Full-Stack Developer with 8+ years of experience building and
             maintaining products across E-commerce, Health Insurance, and
             FinTech.
