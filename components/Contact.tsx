@@ -7,7 +7,7 @@ export default function Contact({}: Props): ReactElement {
     <div className="flex-row w-full h-full py-20 mx-auto lg:flex">
       <div className="w-full h-full py-16 pl-8 bg-white lg:pl-32 lg:w-1/2">
         <h1 className="w-3/4 mb-12 font-sans text-5xl font-extrabold leading-tight lg:leading-loose sm:text-4xl md:text-5xl">
-          Let's create the future together
+          Let&apos;s create the future together
         </h1>
         <div className="mt-12 min-h-32">
           <h5 className="font-serif text-xs font-black leading-10 tracking-widest uppercase transition duration-300 ease-in-out sm:text-sm hover:text-yellow-600 hover:text-sm">
