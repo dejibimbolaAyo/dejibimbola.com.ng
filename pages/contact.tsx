@@ -1,10 +1,10 @@
-import Contact from '../components/Contact'
-import Layout from '../components/Layout'
+import Contact from "../components/Contact";
+import Layout from "../components/Layout";
 
 const ContactPage = () => (
   <Layout title="Contact">
-			<Contact />
+    <Contact />
   </Layout>
-)
+);
 
-export default ContactPage
+export default ContactPage;

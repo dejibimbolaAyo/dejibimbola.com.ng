@@ -1,0 +1,15 @@
+extends:
+  - next
+  - next/core-web-vitals
+  - plugin:prettier/recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:react-hooks/recommended
+  - plugin:prettier/recommended
+plugins:
+  - simple-import-sort
+  - "@stylistic/js"
+rules:
+  import/no-anonymous-default-export: 0
+  react/display-name: 0
+  "@typescript-eslint/no-explicit-any": 0
+  react/no-unknown-property: 0
