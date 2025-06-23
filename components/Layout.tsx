@@ -38,7 +38,7 @@ export default function Layout({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dejibimbola.com.ng" />
+        <meta property="og:url" content="https://dejibimbola.com" />
         <meta property="og:image" content={ogImage} />
         <meta property="og:site_name" content="Deji Abimbola Portfolio" />
 
@@ -51,7 +51,7 @@ export default function Layout({
         <meta name="twitter:image" content={ogImage} />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://dejibimbola.com.ng" />
+        <link rel="canonical" href="https://dejibimbola.com" />
 
         {/* PWA and Mobile */}
         <link rel="manifest" href="/manifest.json" />
