@@ -34,10 +34,10 @@ export default function Home() {
           content="Portfolio of Ayodeji (Deji) Abimbola, one of Nigeria's top software engineers and tech leaders. See projects, skills, and industry impact."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dejibimbola.com.ng" />
+        <meta property="og:url" content="https://dejibimbola.com" />
         <meta
           property="og:image"
-          content="https://dejibimbola.com.ng/assets/dejibimbola_lg.png"
+          content="https://dejibimbola.com/assets/dejibimbola_lg.png"
         />
         <meta property="og:site_name" content="Deji Abimbola Portfolio" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -51,9 +51,9 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://dejibimbola.com.ng/assets/dejibimbola_lg.png"
+          content="https://dejibimbola.com/assets/dejibimbola_lg.png"
         />
-        <link rel="canonical" href="https://dejibimbola.com.ng" />
+        <link rel="canonical" href="https://dejibimbola.com" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#c98a06" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -97,8 +97,8 @@ export default function Home() {
                 "Technical Leader",
                 "Entrepreneur",
               ],
-              url: "https://dejibimbola.com.ng",
-              image: "https://dejibimbola.com.ng/assets/dejibimbola_lg.png",
+              url: "https://dejibimbola.com",
+              image: "https://dejibimbola.com/assets/dejibimbola_lg.png",
               sameAs: [
                 "https://linkedin.com/in/dejibimbola",
                 "https://github.com/dejibimbolaAyo",

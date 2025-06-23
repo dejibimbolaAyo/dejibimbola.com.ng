@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://dejibimbola.com.ng/sitemap.xml
+Sitemap: https://dejibimbola.com/sitemap.xml
 
 # Crawl delay (optional - be respectful to server)
 Crawl-delay: 1

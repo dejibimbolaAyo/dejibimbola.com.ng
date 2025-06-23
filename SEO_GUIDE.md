@@ -157,9 +157,9 @@ Use alternate names: Deji Abimbola, Dejibimbola.
 
 ## 🔗 Important URLs
 
-- **Sitemap**: https://dejibimbola.com.ng/sitemap.xml
-- **Robots.txt**: https://dejibimbola.com.ng/robots.txt
-- **Manifest**: https://dejibimbola.com.ng/manifest.json
+- **Sitemap**: https://dejibimbola.com/sitemap.xml
+- **Robots.txt**: https://dejibimbola.com/robots.txt
+- **Manifest**: https://dejibimbola.com/manifest.json
 
 ## 📞 Support
 

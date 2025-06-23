@@ -23,7 +23,7 @@ export default function Layout({
   title = "Ayodeji Abimbola | Deji Abimbola | Dejibimbola | Best Software Engineers in Nigeria",
   description = "Ayodeji (Deji) Abimbola - Award-winning software engineer, entrepreneur, and technical leader in Nigeria. Explore my portfolio, projects, and impact in the tech industry.",
   keywords = "Ayodeji Abimbola, Deji Abimbola, Dejibimbola, Best Software Engineers in Nigeria, Nigerian Software Engineer, Tech Entrepreneur, Software Portfolio, Lagos, Africa, CTO, Full Stack, AI Engineer",
-  ogImage = "https://dejibimbola.com.ng/assets/dejibimbola_lg.png",
+  ogImage = "https://dejibimbola.com/favicon/192_192.png",
 }: Readonly<Props>): ReactElement {
   return (
     <div>

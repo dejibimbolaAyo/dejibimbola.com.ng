@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js, Chakra UI, and TypeSc
 
 ## 🚀 Live Demo
 
-[dejibimbola.com.ng](https://dejibimbola.com.ng)
+[dejibimbola.com](https://dejibimbola.com)
 
 ## 🛠️ Tech Stack
 
@@ -102,7 +102,7 @@ For detailed SEO information, see [SEO_GUIDE.md](./SEO_GUIDE.md).
 ## 🏗️ Project Structure
 
 ```
-dejibimbola.com.ng-nextjs/
+dejibimbola.com-nextjs/
 ├── components/           # React components
 │   ├── Contact.tsx      # Contact form with EmailJS
 │   ├── Hero.tsx         # Landing section
@@ -189,8 +189,8 @@ dejibimbola.com.ng-nextjs/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/dejibimbolaAyo/dejibimbola.com.ng-nextjs.git
-   cd dejibimbola.com.ng-nextjs
+   git clone https://github.com/dejibimbolaAyo/dejibimbola.com-nextjs.git
+   cd dejibimbola.com-nextjs
    ```
 
 2. **Install dependencies**
