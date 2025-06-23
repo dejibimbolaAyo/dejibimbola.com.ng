@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Impact from "../components/Impact";
 import FeaturedProjects from "../components/FeaturedProjects";
-import { Box, VStack, Heading, Button, HStack } from "@chakra-ui/react";
+import { Box, VStack, Heading, Button, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function Home() {
@@ -128,46 +128,118 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
-        <Box py={12}>
-          <VStack spacing={8}>
-            <Heading as="h2" size="xl" color="brand.primary" textAlign="center">
+        <Box py={{ base: 8, md: 12 }} px={{ base: 4, md: 6 }}>
+          <VStack spacing={{ base: 6, md: 8 }}>
+            <Heading
+              as="h2"
+              size={{ base: "lg", md: "xl" }}
+              color="brand.primary"
+              textAlign="center"
+              px={{ base: 2, md: 0 }}
+            >
               Quick Links
             </Heading>
-            <HStack spacing={4} justify="center">
-              <Link href="/about">
-                <Button colorScheme="yellow" variant="outline">
-                  About
-                </Button>
-              </Link>
-              <Link href="/projects">
-                <Button colorScheme="yellow" variant="outline">
-                  Projects
-                </Button>
-              </Link>
-              <Link href="/resume">
-                <Button colorScheme="yellow" variant="outline">
-                  Resume
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button colorScheme="yellow" variant="outline">
-                  Contact
-                </Button>
-              </Link>
-            </HStack>
+            <Box w="full" maxW="4xl" mx="auto">
+              <SimpleGrid
+                columns={{ base: 2, sm: 4 }}
+                spacing={{ base: 3, md: 4 }}
+                px={{ base: 2, md: 0 }}
+              >
+                <Link href="/about" style={{ width: "100%" }}>
+                  <Button
+                    colorScheme="yellow"
+                    variant="outline"
+                    size={{ base: "md", md: "lg" }}
+                    w="full"
+                    h={{ base: "40px", md: "48px" }}
+                    fontSize={{ base: "sm", md: "md" }}
+                    _hover={{
+                      transform: "translateY(-2px)",
+                      boxShadow: "md",
+                    }}
+                    transition="all 0.3s"
+                  >
+                    About
+                  </Button>
+                </Link>
+                <Link href="/projects" style={{ width: "100%" }}>
+                  <Button
+                    colorScheme="yellow"
+                    variant="outline"
+                    size={{ base: "md", md: "lg" }}
+                    w="full"
+                    h={{ base: "40px", md: "48px" }}
+                    fontSize={{ base: "sm", md: "md" }}
+                    _hover={{
+                      transform: "translateY(-2px)",
+                      boxShadow: "md",
+                    }}
+                    transition="all 0.3s"
+                  >
+                    Projects
+                  </Button>
+                </Link>
+                <Link href="/resume" style={{ width: "100%" }}>
+                  <Button
+                    colorScheme="yellow"
+                    variant="outline"
+                    size={{ base: "md", md: "lg" }}
+                    w="full"
+                    h={{ base: "40px", md: "48px" }}
+                    fontSize={{ base: "sm", md: "md" }}
+                    _hover={{
+                      transform: "translateY(-2px)",
+                      boxShadow: "md",
+                    }}
+                    transition="all 0.3s"
+                  >
+                    Resume
+                  </Button>
+                </Link>
+                <Link href="/contact" style={{ width: "100%" }}>
+                  <Button
+                    colorScheme="yellow"
+                    variant="outline"
+                    size={{ base: "md", md: "lg" }}
+                    w="full"
+                    h={{ base: "40px", md: "48px" }}
+                    fontSize={{ base: "sm", md: "md" }}
+                    _hover={{
+                      transform: "translateY(-2px)",
+                      boxShadow: "md",
+                    }}
+                    transition="all 0.3s"
+                  >
+                    Contact
+                  </Button>
+                </Link>
+              </SimpleGrid>
+            </Box>
           </VStack>
         </Box>
-        <Box py={8}>
+        <Box py={{ base: 6, md: 8 }} px={{ base: 4, md: 6 }}>
           <Skills />
         </Box>
-        <Box py={8}>
+        <Box py={{ base: 6, md: 8 }} px={{ base: 4, md: 6 }}>
           <Impact />
         </Box>
-        <Box py={8}>
+        <Box py={{ base: 6, md: 8 }} px={{ base: 4, md: 6 }}>
           <FeaturedProjects />
-          <Box textAlign="center" mt={6}>
+          <Box textAlign="center" mt={{ base: 4, md: 6 }}>
             <Link href="/projects">
-              <Button colorScheme="yellow" variant="solid">
+              <Button
+                colorScheme="yellow"
+                variant="solid"
+                size={{ base: "md", md: "lg" }}
+                px={{ base: 6, md: 8 }}
+                py={{ base: 3, md: 4 }}
+                fontSize={{ base: "sm", md: "md" }}
+                _hover={{
+                  transform: "translateY(-2px)",
+                  boxShadow: "lg",
+                }}
+                transition="all 0.3s"
+              >
                 See All Projects
               </Button>
             </Link>

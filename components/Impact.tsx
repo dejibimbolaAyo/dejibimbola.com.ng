@@ -50,25 +50,30 @@ const impactMetrics = [
 
 export default function Impact() {
   return (
-    <Box py={16} bgGradient="linear(to-r, brand.dark, #2a2f32)">
-      <Box maxW="6xl" mx="auto" px={4}>
-        <VStack spacing={6} mb={12}>
+    <Box
+      py={{ base: 12, md: 16 }}
+      bgGradient="linear(to-r, brand.dark, #2a2f32)"
+    >
+      <Box maxW="6xl" mx="auto" px={{ base: 4, md: 6 }}>
+        <VStack spacing={{ base: 4, md: 6 }} mb={{ base: 8, md: 12 }}>
           <Heading
             as="h2"
-            size="2xl"
+            size={{ base: "xl", md: "2xl" }}
             textAlign="center"
             fontWeight="extrabold"
             color="brand.light"
             letterSpacing="tight"
+            px={{ base: 2, md: 0 }}
           >
             Impact & Results
           </Heading>
           <Text
-            fontSize="lg"
+            fontSize={{ base: "md", md: "lg" }}
             textAlign="center"
             color="whiteAlpha.900"
             fontWeight="medium"
             maxW="2xl"
+            px={{ base: 3, md: 0 }}
           >
             Quantifiable achievements across FinTech, E-commerce, and SaaS
             platforms
@@ -76,20 +81,21 @@ export default function Impact() {
         </VStack>
 
         <SimpleGrid
-          columns={{ base: 2, md: 3 }}
-          spacing={8}
+          columns={{ base: 1, sm: 2, md: 3 }}
+          spacing={{ base: 4, md: 8 }}
           justifyItems="center"
+          px={{ base: 2, md: 0 }}
         >
           {impactMetrics.map((item, index) => (
             <VStack
               key={index}
               bg="white"
               borderRadius="xl"
-              p={6}
+              p={{ base: 4, md: 6 }}
               boxShadow="xl"
               textAlign="center"
-              spacing={4}
-              minH="220px"
+              spacing={{ base: 3, md: 4 }}
+              minH={{ base: "200px", md: "220px" }}
               justify="center"
               border="1px solid"
               borderColor="brand.primary"
@@ -99,12 +105,18 @@ export default function Impact() {
                 boxShadow: "2xl",
                 borderColor: "brand.primary",
               }}
+              w="full"
+              maxW={{ base: "280px", sm: "none" }}
             >
-              <Text fontSize="4xl" fontWeight="bold" color="brand.primary">
+              <Text
+                fontSize={{ base: "3xl", md: "4xl" }}
+                fontWeight="bold"
+                color="brand.primary"
+              >
                 {item.icon}
               </Text>
               <Text
-                fontSize="3xl"
+                fontSize={{ base: "2xl", md: "3xl" }}
                 fontWeight="extrabold"
                 color="brand.dark"
                 lineHeight="tight"
@@ -112,15 +124,16 @@ export default function Impact() {
                 {item.metric}
               </Text>
               <Text
-                fontSize="lg"
+                fontSize={{ base: "md", md: "lg" }}
                 fontWeight="bold"
                 color="brand.dark"
                 textAlign="center"
+                px={{ base: 1, md: 0 }}
               >
                 {item.label}
               </Text>
               <Text
-                fontSize="sm"
+                fontSize={{ base: "xs", md: "sm" }}
                 color="brand.primary"
                 fontWeight="semibold"
                 textAlign="center"
@@ -128,10 +141,11 @@ export default function Impact() {
                 {item.company}
               </Text>
               <Text
-                fontSize="sm"
+                fontSize={{ base: "xs", md: "sm" }}
                 color="gray.600"
                 textAlign="center"
                 lineHeight="tall"
+                px={{ base: 1, md: 0 }}
               >
                 {item.description}
               </Text>

@@ -12,7 +12,7 @@ export default function About() {
       keywords="About Ayodeji Abimbola, About Deji Abimbola, About Dejibimbola, Nigerian Entrepreneur, Technical Leader, Software Architect, Lagos Tech Leader"
     >
       <Box pt={20} py={12}>
-        <VStack spacing={8} pt={20}>
+        <VStack spacing={8} pt={20} px={4}>
           <Heading as="h1" size="2xl" color="brand.primary" textAlign="center">
             About Me
           </Heading>

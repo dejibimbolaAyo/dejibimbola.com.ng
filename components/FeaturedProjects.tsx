@@ -75,25 +75,27 @@ const featuredProjects = [
 
 export default function FeaturedProjects() {
   return (
-    <Box py={16} bg="white">
-      <Box maxW="6xl" mx="auto" px={4}>
-        <VStack spacing={6} mb={12}>
+    <Box py={{ base: 12, md: 16 }} bg="white">
+      <Box maxW="6xl" mx="auto" px={{ base: 4, md: 6 }}>
+        <VStack spacing={{ base: 4, md: 6 }} mb={{ base: 8, md: 12 }}>
           <Heading
             as="h2"
-            size="2xl"
+            size={{ base: "xl", md: "2xl" }}
             textAlign="center"
             fontWeight="extrabold"
             color="brand.dark"
             letterSpacing="tight"
+            px={{ base: 2, md: 0 }}
           >
             Featured Projects
           </Heading>
           <Text
-            fontSize="lg"
+            fontSize={{ base: "md", md: "lg" }}
             textAlign="center"
             color="gray.600"
             fontWeight="medium"
             maxW="2xl"
+            px={{ base: 3, md: 0 }}
           >
             Innovative solutions across automation, healthcare, and financial
             technology
@@ -102,15 +104,16 @@ export default function FeaturedProjects() {
 
         <SimpleGrid
           columns={{ base: 1, lg: 2 }}
-          spacing={8}
+          spacing={{ base: 6, md: 8 }}
           justifyItems="stretch"
+          px={{ base: 2, md: 0 }}
         >
           {featuredProjects.map((project, index) => (
             <Box
               key={index}
               bg="white"
               borderRadius="xl"
-              p={8}
+              p={{ base: 6, md: 8 }}
               boxShadow="lg"
               border="1px solid"
               borderColor="gray.200"
@@ -121,12 +124,12 @@ export default function FeaturedProjects() {
                 borderColor: "brand.primary",
               }}
             >
-              <VStack spacing={4} align="stretch">
+              <VStack spacing={{ base: 3, md: 4 }} align="stretch">
                 <HStack justify="space-between" align="flex-start">
                   <VStack align="flex-start" spacing={2}>
                     <Heading
                       as="h3"
-                      size="lg"
+                      size={{ base: "md", md: "lg" }}
                       color="brand.dark"
                       fontWeight="bold"
                     >
@@ -135,23 +138,27 @@ export default function FeaturedProjects() {
                     <Badge
                       colorScheme="orange"
                       variant="subtle"
-                      px={3}
-                      py={1}
+                      px={{ base: 2, md: 3 }}
+                      py={{ base: 0.5, md: 1 }}
                       borderRadius="full"
-                      fontSize="xs"
+                      fontSize={{ base: "2xs", md: "xs" }}
                     >
                       {project.category}
                     </Badge>
                   </VStack>
                 </HStack>
 
-                <Text fontSize="md" color="gray.600" lineHeight="tall">
+                <Text
+                  fontSize={{ base: "sm", md: "md" }}
+                  color="gray.600"
+                  lineHeight="tall"
+                >
                   {project.description}
                 </Text>
 
                 <Box>
                   <Text
-                    fontSize="sm"
+                    fontSize={{ base: "xs", md: "sm" }}
                     fontWeight="bold"
                     color="brand.dark"
                     mb={2}
@@ -162,7 +169,7 @@ export default function FeaturedProjects() {
                     {project.features.map((feature, idx) => (
                       <Text
                         key={idx}
-                        fontSize="sm"
+                        fontSize={{ base: "xs", md: "sm" }}
                         color="gray.600"
                         _before={{ content: '"• "', color: "brand.primary" }}
                       >
@@ -174,22 +181,22 @@ export default function FeaturedProjects() {
 
                 <Box>
                   <Text
-                    fontSize="sm"
+                    fontSize={{ base: "xs", md: "sm" }}
                     fontWeight="bold"
                     color="brand.dark"
                     mb={2}
                   >
                     Technologies:
                   </Text>
-                  <HStack wrap="wrap" spacing={2}>
+                  <HStack wrap="wrap" spacing={{ base: 1, md: 2 }}>
                     {project.tech.map((tech, idx) => (
                       <Badge
                         key={idx}
                         colorScheme="blue"
                         variant="outline"
-                        px={2}
-                        py={1}
-                        fontSize="xs"
+                        px={{ base: 1.5, md: 2 }}
+                        py={{ base: 0.5, md: 1 }}
+                        fontSize={{ base: "2xs", md: "xs" }}
                       >
                         {tech}
                       </Badge>
@@ -199,14 +206,19 @@ export default function FeaturedProjects() {
 
                 <Box>
                   <Text
-                    fontSize="sm"
+                    fontSize={{ base: "xs", md: "sm" }}
                     fontWeight="bold"
                     color="brand.dark"
                     mb={2}
                   >
                     Impact:
                   </Text>
-                  <Text fontSize="sm" color="gray.600" fontStyle="italic">
+                  <Text
+                    fontSize={{ base: "xs", md: "sm" }}
+                    color="brand.primary"
+                    fontWeight="medium"
+                    lineHeight="tall"
+                  >
                     {project.impact}
                   </Text>
                 </Box>

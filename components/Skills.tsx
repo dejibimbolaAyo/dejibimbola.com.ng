@@ -18,49 +18,71 @@ const skills = [
 
 export default function Skills() {
   return (
-    <Box maxW="6xl" my={16} mx="auto" pb={8} px={4}>
+    <Box
+      maxW="6xl"
+      my={{ base: 6, md: 12 }}
+      mx="auto"
+      pb={{ base: 3, md: 6 }}
+      px={{ base: 3, md: 4 }}
+    >
       <Heading
         as="h2"
-        size="xl"
+        size={{ base: "lg", md: "xl" }}
         textAlign="center"
         fontWeight="extrabold"
         color="brand.light"
-        mb={8}
+        mb={{ base: 4, md: 6 }}
+        px={{ base: 1, md: 0 }}
       >
         Core Skills
       </Heading>
       <SimpleGrid
-        columns={{ base: 4, sm: 6, md: 8 }}
-        spacing={4}
+        columns={{ base: 3, sm: 4, md: 6, lg: 8 }}
+        spacing={{ base: 2, md: 3 }}
         justifyItems="center"
+        px={{ base: 1, md: 0 }}
+        gap={{ base: 2, md: 3 }}
       >
         {skills.map((skill) => (
           <Box
             key={skill.alt}
             bgGradient="linear(to-br, brand.light, #f8f9fa, #f1f3f4)"
-            borderRadius="xl"
-            w="120px"
-            h="140px"
+            borderRadius="lg"
+            w={{ base: "90px", sm: "100px", md: "110px", lg: "120px" }}
+            h={{ base: "100px", sm: "110px", md: "120px", lg: "130px" }}
             display="flex"
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            p={3}
-            border="1.5px solid"
+            p={{ base: 1.5, md: 2 }}
+            border="1px solid"
             borderColor="brand.primary"
-            boxShadow="0 4px 24px 0 rgba(201,138,6,0.15)"
-            transition="all 0.25s cubic-bezier(.4,2,.6,1)"
+            boxShadow="0 2px 16px 0 rgba(201,138,6,0.12)"
+            transition="all 0.2s ease-in-out"
             _hover={{
-              boxShadow: "0 8px 32px 0 rgba(201,138,6,0.25)",
-              transform: "scale(1.06) rotate(-1deg)",
+              boxShadow: "0 4px 24px 0 rgba(201,138,6,0.2)",
+              transform: "scale(1.04) rotate(-0.5deg)",
               borderColor: "brand.primary",
               zIndex: 1,
             }}
             textAlign="center"
             position="relative"
+            flexShrink={0}
           >
-            <VStack spacing={2} flex={1} justify="center">
-              <Box w={12} h={12} mx="auto">
+            <VStack
+              spacing={{ base: 0.5, md: 1 }}
+              flex={1}
+              justify="center"
+              w="full"
+            >
+              <Box
+                w={{ base: 8, sm: 10, md: 12, lg: 14 }}
+                h={{ base: 8, sm: 10, md: 12, lg: 14 }}
+                mx="auto"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+              >
                 <ProgressiveImage
                   originalImageSrc={skill.src}
                   alt={skill.alt}
@@ -68,9 +90,13 @@ export default function Skills() {
               </Box>
               <Text
                 fontWeight="bold"
-                fontSize="sm"
+                fontSize={{ base: "2xs", sm: "xs", md: "sm" }}
                 color="brand.dark"
                 letterSpacing="tight"
+                lineHeight="tight"
+                px={1}
+                noOfLines={2}
+                textAlign="center"
               >
                 {skill.label}
               </Text>

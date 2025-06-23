@@ -230,8 +230,8 @@ export default function Contact() {
             fontWeight="medium"
             maxW="2xl"
           >
-            Ready to start a project or just want to chat? I&apos;d love to hear
-            from you.
+            Ready to engage me on a project, or just want to chat? I&apos;d love
+            to hear from you.
           </Text>
         </VStack>
 

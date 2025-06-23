@@ -189,7 +189,7 @@ export default function TechnicalArchitecture() {
             fontWeight="semibold"
             mb={4}
           >
-            Ready to architect your next solution?
+            Want to architect new solutions or optimize existing ones?
           </Text>
           <Text fontSize="md" color="gray.600" maxW="2xl" mx="auto">
             From initial concept to production deployment, I bring comprehensive
