@@ -78,7 +78,7 @@ export default function Education() {
             color="brand.light"
             letterSpacing="tight"
           >
-            Education & Continuous Learning
+            Continuous Learning
           </Heading>
           <Text
             fontSize="lg"
@@ -87,24 +87,9 @@ export default function Education() {
             fontWeight="medium"
             maxW="2xl"
           >
-            Formal education combined with ongoing professional development and
-            certifications
+            Continuous learning and professional development
           </Text>
         </VStack>
-
-        {/* Formal Education */}
-        <Box mb={12}>
-          <Heading
-            as="h3"
-            size="lg"
-            textAlign="center"
-            color="brand.light"
-            mb={8}
-            fontWeight="bold"
-          >
-            Formal Education
-          </Heading>
-        </Box>
 
         {/* Continuous Learning */}
         <Box>

@@ -87,22 +87,6 @@ const industries = [
       "Mentoring",
     ],
   },
-  {
-    name: "Manufacturing & Automation",
-    description:
-      "Implemented automation systems and manufacturing process optimization with IoT integration.",
-    projects: ["Robotic Systems", "Process Automation", "IoT Integration"],
-    icon: FiTrendingUp,
-    color: "teal",
-    experience: 70,
-    technologies: [
-      "IoT",
-      "Python",
-      "Automation",
-      "Data Analytics",
-      "Hardware Integration",
-    ],
-  },
 ];
 
 export default function IndustryExperience() {
