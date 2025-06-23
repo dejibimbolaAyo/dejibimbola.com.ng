@@ -1,33 +1,126 @@
-import React, { ReactElement } from "react";
+import {
+  Box,
+  Heading,
+  Stack,
+  Text,
+  Center,
+  Badge,
+  HStack,
+} from "@chakra-ui/react";
 import ProgressiveImage from "../components/elements/ProgressiveImage";
 
 interface Props {}
 
-export default function Hero({}: Props): ReactElement {
+export default function Hero({}: Props) {
   return (
-    <div className="flex-col pt-56 pb-24">
-      <div className="container w-10/12 pt-4 pb-4 mx-auto sm:pt-16">
-        <div className="flex-col items-center w-full text-center">
-          <h5 className="text-base font-semibold leading-3 tracking-widest uppercase">
-            Software Engineer
-          </h5>
-          <h1 className="font-sans text-3xl font-extrabold whitespace-no-wrap sm:text-4xl md:text-5xl">
+    <Box pt={{ base: 24, md: 40 }} bg="white">
+      <Center>
+        <Stack spacing={6} align="center" textAlign="center" maxW="3xl">
+          <Badge
+            colorScheme="orange"
+            variant="subtle"
+            px={4}
+            py={2}
+            borderRadius="full"
+            fontSize="sm"
+            fontWeight="bold"
+          >
+            Founder & Full Stack Engineer
+          </Badge>
+          <Heading
+            as="h2"
+            size="md"
+            color="brand.primary"
+            letterSpacing="wider"
+            fontWeight="bold"
+          >
+            Building Digital Products That Scale
+          </Heading>
+          <Heading
+            as="h1"
+            size={{ base: "2xl", md: "3xl" }}
+            fontWeight="extrabold"
+            color="brand.dark"
+          >
             Ayodeji Abimbola
-          </h1>
-          <h5 className="text-xs font-black tracking-widest sm:text-lg">
-            NODE.JS | REACT.JS | TYPESCRIPT | JAVASCRIPT
-          </h5>
-        </div>
-      </div>
-      <div className="flex-col items-center justify-center max-w-6xl mx-auto phone--container">
-        <div className="phone">
+          </Heading>
+          <Text
+            fontSize={{ base: "md", md: "lg" }}
+            color="brand.dark"
+            fontWeight="medium"
+            lineHeight="tall"
+          >
+            Founder of BitSix Ltd. and Full Stack Engineer with 8+ years of
+            experience building scalable solutions across FinTech, E-commerce,
+            and SaaS. I specialize in guiding startups from concept to MVP,
+            optimizing system performance, and leading cross-functional teams to
+            deliver impactful digital products.
+          </Text>
+          <HStack spacing={4} wrap="wrap" justify="center">
+            <Text
+              fontSize="sm"
+              color="brand.primary"
+              fontWeight="bold"
+              letterSpacing="wider"
+            >
+              NODE.JS
+            </Text>
+            <Text fontSize="sm" color="gray.500">
+              •
+            </Text>
+            <Text
+              fontSize="sm"
+              color="brand.primary"
+              fontWeight="bold"
+              letterSpacing="wider"
+            >
+              REACT.JS
+            </Text>
+            <Text fontSize="sm" color="gray.500">
+              •
+            </Text>
+            <Text
+              fontSize="sm"
+              color="brand.primary"
+              fontWeight="bold"
+              letterSpacing="wider"
+            >
+              TYPESCRIPT
+            </Text>
+            <Text fontSize="sm" color="gray.500">
+              •
+            </Text>
+            <Text
+              fontSize="sm"
+              color="brand.primary"
+              fontWeight="bold"
+              letterSpacing="wider"
+            >
+              AWS
+            </Text>
+            <Text fontSize="sm" color="gray.500">
+              •
+            </Text>
+            <Text
+              fontSize="sm"
+              color="brand.primary"
+              fontWeight="bold"
+              letterSpacing="wider"
+            >
+              KUBERNETES
+            </Text>
+          </HStack>
+        </Stack>
+      </Center>
+      <Center mt={12}>
+        <Box maxW="xs">
           <ProgressiveImage
             tinyImageSrc="assets/tiny_phoneMockup@1.5x.png"
             originalImageSrc="assets/phoneMockup@1.5x.png"
-            className="w-64 h-auto mx-auto"
+            className="chakra-image"
           />
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Center>
+    </Box>
   );
 }

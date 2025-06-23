@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Manrope } from "next/font/google";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { Box } from "@chakra-ui/react";
 
 type Props = {
   children?: ReactNode;
@@ -61,14 +62,19 @@ export default function Layout({
         />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="2LejtRLnIfh608Ce86L4Ng"
+          async
+        ></script>
       </Head>
-      <div className="box-border min-h-screen m-0 antialiased">
+      <Box bg="brand.dark" minH="100vh">
         <div className={manrope.className}>
-          <Navbar></Navbar>
+          <Navbar />
           {children}
-          <Footer></Footer>
+          <Footer />
         </div>
-      </div>
+      </Box>
     </div>
   );
 }

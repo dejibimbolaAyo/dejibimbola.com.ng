@@ -32,7 +32,7 @@ const Heading = {
     hero: {
       fontSize: "6xl",
       lineHeight: "1.2",
-      color: "brand.50",
+      color: "brand.900",
       fontFamily: dmSerifDisplay.style.fontFamily,
     },
   },
