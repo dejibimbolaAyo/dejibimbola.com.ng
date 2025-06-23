@@ -20,7 +20,11 @@ export default function ResumePage() {
   };
 
   return (
-    <Layout>
+    <Layout
+      title="Resume - Ayodeji Abimbola | Deji Abimbola | Dejibimbola - Software Engineer CV"
+      description="Download Ayodeji (Deji) Abimbola's resume. View detailed employment history, technical skills, and certifications of one of Nigeria's top software engineers."
+      keywords="Resume Ayodeji Abimbola, CV Deji Abimbola, Resume Dejibimbola, Nigerian Software Engineer Resume, Lagos Tech CV, Software Engineer CV Nigeria"
+    >
       <Box pt={20} py={12}>
         <VStack spacing={8} pt={20}>
           <Heading as="h1" size="2xl" color="brand.primary" textAlign="center">
