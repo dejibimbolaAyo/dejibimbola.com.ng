@@ -93,7 +93,7 @@ export default function Works() {
                 {works[idx].desc}
               </Text>
             </Box>
-          </Box>
+          </Box>,
         );
       } else {
         // See More card
@@ -160,7 +160,7 @@ export default function Works() {
                 </svg>
               </Box>
             </Box>
-          </ChakraLink>
+          </ChakraLink>,
         );
       }
     }
