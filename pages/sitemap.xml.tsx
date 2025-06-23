@@ -48,7 +48,7 @@ ${pages
     <lastmod>${currentDate}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
-  </url>`,
+  </url>`
   )
   .join("\n")}
 </urlset>`;
@@ -56,7 +56,7 @@ ${pages
   res.setHeader("Content-Type", "text/xml");
   res.setHeader(
     "Cache-Control",
-    "public, s-maxage=86400, stale-while-revalidate",
+    "public, s-maxage=86400, stale-while-revalidate"
   );
   res.write(sitemap);
   res.end();

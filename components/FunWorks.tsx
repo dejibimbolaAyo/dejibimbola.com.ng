@@ -59,7 +59,7 @@ export default function FunWorks() {
               alt={funWorks[idx].alt}
               className="chakra-image"
             />
-          </Box>,
+          </Box>
         );
       } else {
         // See More card
@@ -127,7 +127,7 @@ export default function FunWorks() {
                 </svg>
               </Box>
             </Box>
-          </ChakraLink>,
+          </ChakraLink>
         );
       }
     }

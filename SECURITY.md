@@ -8,9 +8,9 @@ Create a `.env.local` file in your project root:
 
 ```bash
 # EmailJS Configuration
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=adW7OUcZRhI2K6LOt
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_o9dgn2q
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_d006th8
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=user_id_on_emailjs
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_id
 
 # Contact Information
 NEXT_PUBLIC_CONTACT_EMAIL=dejibimbola@gmail.com
