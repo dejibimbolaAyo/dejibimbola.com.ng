@@ -13,14 +13,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
-import {
-  FiTarget,
-  FiZap,
-  FiCheckCircle,
-  FiTrendingUp,
-  FiShield,
-  FiDatabase,
-} from "react-icons/fi";
+import { FiTarget, FiZap, FiTrendingUp, FiShield } from "react-icons/fi";
 
 const problemSolutions = [
   {
