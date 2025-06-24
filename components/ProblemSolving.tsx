@@ -24,100 +24,64 @@ import {
 
 const problemSolutions = [
   {
-    problem: "Scalability Challenge at TradeDepot",
+    problem: "Product propagation across localized shopping views.",
     context:
-      "E-commerce platform struggling with 10,000+ daily transactions and slow response times",
+      "E-commerce platform where products had to reflect quickly across regions for sales and inventory alignment.",
     solution:
-      "Implemented microservices architecture with Redis caching, database optimization, and CDN integration",
+      "Implemented a microservice architecture and event-driven processing with queues for async updates to Area Baskets.",
     outcome:
-      "60% faster response times, 99.9% uptime, handled 50,000+ daily transactions",
-    technologies: ["Node.js", "Redis", "PostgreSQL", "Docker", "AWS"],
+      "Propagation time reduced from hours to under 10 minutes; improved system scalability and responsiveness.",
+    technologies: ["Node.js", "RabbitMQ", "Event-driven architecture"],
     icon: FiTrendingUp,
     color: "blue",
   },
   {
-    problem: "Security Vulnerabilities in Payment System",
+    problem: "Dispatch route planning slowdowns.",
     context:
-      "FinTech application with multiple security gaps and compliance requirements",
+      "Logistics module for dispatching goods to over 1,000 retail stores.",
     solution:
-      "Implemented comprehensive security measures including JWT authentication, encryption, and audit trails",
+      "Integrated Routific for automated route optimization and moved route planning to background workers.",
     outcome:
-      "Zero security breaches, PCI DSS compliance, 100% secure transaction processing",
-    technologies: ["JWT", "bcrypt", "Encryption", "Helmet.js", "Audit Logs"],
+      "Faster route generation, reduced system lag, and improved delivery efficiency.",
+    technologies: [
+      "Routific API",
+      "Node.js",
+      "RabbitMQ",
+      "Asynchronous job queues",
+    ],
     icon: FiShield,
     color: "red",
   },
   {
-    problem: "Real-time Data Synchronization",
+    problem: "Information architecture overhaul and performance improvement.",
     context:
-      "Multi-platform application requiring instant data updates across web and mobile",
+      "Information architecture overhaul on a multi-tenant coaching platform.",
     solution:
-      "Built WebSocket-based real-time system with event-driven architecture and conflict resolution",
+      "Built a dynamic sidebar menu served via API, implemented authorization filtering, excluded unnecessary child menu data, and refactored data-fetching logic.",
     outcome:
-      "Real-time updates across all platforms, 99.9% data consistency, improved user experience",
-    technologies: [
-      "WebSockets",
-      "Socket.io",
-      "Event Sourcing",
-      "Redis",
-      "Conflict Resolution",
-    ],
+      "Improved user experience, eliminated data refetching issues, and reduced frontend complexity.",
+    technologies: ["React.js", "MobX", "TypeScript", "Node.js"],
     icon: FiZap,
     color: "yellow",
   },
   {
-    problem: "Legacy System Integration",
+    problem: "API responses were bloated with base16-encoded image.",
     context:
-      "Manufacturing company with outdated systems requiring modern API integration",
+      "The system was a multi-tenant coaching platform where logos and profile images were stored in the database as binary blobs and returned with every API call. Enterprise clients had strict data governance and residency requirements.",
     solution:
-      "Developed middleware layer with API gateway, data transformation, and monitoring systems",
+      "Refactored the image handling pipeline by replacing blobs with a file-path-based model. Images were pre-processed on upload into multiple sizes and served via cacheable URLs. Legacy blobs were migrated, and regional storage plus tenant isolation was enforced.",
     outcome:
-      "Seamless integration, 40% faster data processing, real-time monitoring dashboard",
+      "API payload sizes dropped significantly. Frontend performance improved. CDN delivery and lazy loading were enabled. The platform remained fully compliant with tenant-specific data governance requirements.",
     technologies: [
-      "API Gateway",
-      "Middleware",
-      "Data Transformation",
-      "Monitoring",
-      "Legacy Integration",
-    ],
-    icon: FiDatabase,
-    color: "green",
-  },
-  {
-    problem: "Performance Optimization for SaaS Platform",
-    context:
-      "Enterprise SaaS application with slow loading times and poor user experience",
-    solution:
-      "Implemented code splitting, lazy loading, database query optimization, and CDN deployment",
-    outcome:
-      "70% faster page loads, 50% reduction in server load, improved user retention",
-    technologies: [
-      "Code Splitting",
-      "Lazy Loading",
-      "Query Optimization",
-      "CDN",
-      "Performance Monitoring",
+      "File-based storage system",
+      "Image pre-processing",
+      "Cacheable URL routing",
+      "Custom CDN integration",
+      "Tenant-aware access control",
+      "Data migration scripts",
     ],
     icon: FiTarget,
     color: "purple",
-  },
-  {
-    problem: "Startup MVP Development Under Pressure",
-    context:
-      "Startup needing rapid MVP development with limited resources and tight deadlines",
-    solution:
-      "Adopted rapid prototyping approach with modern tech stack and cloud-native architecture",
-    outcome:
-      "MVP delivered in 6 weeks, secured funding, scalable foundation for growth",
-    technologies: [
-      "Rapid Prototyping",
-      "Cloud Native",
-      "Modern Stack",
-      "Scalable Architecture",
-      "CI/CD",
-    ],
-    icon: FiCheckCircle,
-    color: "teal",
   },
 ];
 
@@ -160,12 +124,13 @@ export default function ProblemSolving() {
               borderColor="gray.200"
               overflow="hidden"
               boxShadow="lg"
+              my={4}
             >
               <AccordionButton
                 py={6}
                 px={6}
                 _hover={{ bg: "gray.50" }}
-                _expanded={{ bg: "brand.primary", color: "white" }}
+                _expanded={{ bg: "dark", color: "white" }}
               >
                 <HStack spacing={4} flex="1" textAlign="left">
                   <Box

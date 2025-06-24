@@ -10,11 +10,11 @@ export default function ProblemSolvingPage() {
       keywords="Problem Solving Ayodeji Abimbola, Technical Solutions Deji Abimbola, Problem Solving Dejibimbola, Nigerian Software Engineer Solutions, Lagos Tech Problem Solving"
     >
       <Box pt={20} py={12}>
-        <VStack spacing={8}>
+        <VStack spacing={8} pt={20}>
           <Heading as="h1" size="2xl" color="brand.primary" textAlign="center">
             Problem Solving
           </Heading>
-          <Text fontSize="lg" color="gray.700" maxW="3xl" textAlign="center">
+          <Text fontSize="lg" color="gray.200" maxW="3xl" textAlign="center">
             Real-world technical challenges solved with innovative solutions and
             measurable outcomes.
           </Text>
